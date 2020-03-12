@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dart - page</title>
+    <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style-main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="OK/stylent.css">
+
+    <style>
+        /* Profile Section */
+        /*-------------------------------------------------------*/
+        
+        #profile {
+            background: rgba(5, 180, 249, .9);
+            background-image: url(images/header-shadow.png);
+            background-position: center bottom;
+            background-repeat: repeat-x;
+            overflow: hidden;
+        }
+        /* About */
+        
+        .about {
+            float: left;
+            margin-top: 30px;
+            width: 490px;
+            margin-left: 20px;
+        }
+        
+        .about .photo-inner {
+            float: left;
+            background: url(images/photo-inner.png) no-repeat;
+            width: 214px;
+            height: 212px;
+            padding: 12px 0 0 19px;
+        }
+        
+        .about .photo-inner img {
+            background-color: #FFF;
+        }
+        
+        .about h1 {
+            font-weight: 900;
+            color: #FFF;
+            line-height: 34px;
+            margin-top: 8px;
+        }
+        
+        .about h3 {
+            margin-top: 5px;
+            font-size: 18px;
+            color: #FFF;
+            line-height: 18px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        h3.main-heading .now {
+            background: rgba(5, 180, 249, .9) !important;
+        }
+        
+        .about p {
+            font-size: 14px;
+            margin-top: 15px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 24px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        /* Personal info */
+        
+        .personal-info {
+            float: left;
+            margin-top: 30px;
+            width: 310px;
+            min-height: 230px;
+            margin-left: 10px;
+            background: url(images/personal-info-sep.png) no-repeat left top;
+            padding: 20px 0 19px 20px;
+        }
+        
+        span.word-wrap a {
+            color: #fff;
+        }
+        
+        .personal-info li {
+            line-height: 12px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            float: left;
+            width: 293px;
+        }
+        
+        .personal-info li label {
+            color: #fff;
+            float: left;
+            padding: 4px 7px;
+            font-weight: 550;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .personal-info li span {
+            float: right;
+            width: 220px;
+            padding-top: 4px;
+            font-weight: 400;
+            color: #fff;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+        }
+        /* Resume Section */
+        /*-------------------------------------------------------*/
+        
+        #resume {
+            padding: 0px 0px;
+            overflow: hidden;
+        }
+        
+        .skills-section,
+        .timeline-section {
+            float: left;
+        }
+        /* Timeline Section */
+        
+        .timeline-section {
+            width: 100%;
+        }
+        
+        .timeline {
+            margin-bottom: 30px;
+        }
+        
+        .timeline li {
+            margin-bottom: 20px;
+        }
+        
+        .timeline li .timelineUnit {
+            line-height: 17px;
+            margin-left: 0px;
+            color: #444;
+            font-size: 13px;
+            border-left: 1px solid rgba(5, 180, 249, .9);
+            padding-left: 15px;
+        }
+        
+        .timeline li .timelineUnit .timelineDate {
+            line-height: 17px;
+            color: rgba(5, 180, 249, .9);
+            font-size: 14px;
+            margin-left: 10px;
+            font-weight: normal;
+            padding: 2px 6px;
+            float: right;
+        }
+        
+        .timeline li .timelineUnit h4 {
+            line-height: 24px;
+            font-size: 15px;
+            color: #444;
+        }
+        
+        .timeline li .timelineUnit h5 {
+            line-height: 18px;
+            font-size: 13px;
+            color: #999;
+        }
+        
+        .timeline li .timelineUnit p {
+            color: #666;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        /* Skills Section */
+        
+        .skills-section {
+            width: 270px;
+        }
+        
+        .skills {
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        
+        .skills li {
+            margin-bottom: 15px;
+            float: left;
+            padding-left: 0px;
+        }
+        
+        .skills li h4 {
+            width: 140px;
+            float: left;
+            font-size: 15px;
+            color: #444;
+        }
+        
+        .skills li .rating {
+            width: 123px;
+            height: 14px;
+            float: left;
+        }
+        
+        .skills li .rating>span {
+            opacity: 0.3;
+            height: 12px;
+            width: 12px;
+            background-color: rgba(5, 180, 249, .9);
+            display: block;
+            float: left;
+            margin-right: 1px;
+            border: 2px solid #eeeeee;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+        }
+        /* Download Button */
+        
+        #resume .button {
+            width: 250px;
+            padding: 10px;
+            background-color: rgba(5, 180, 249, .9);
+            overflow: hidden;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            margin: 20px 0px 0px -20px;
+            color: #fff;
+            display: block;
+            text-align: center;
+            -webkit-border-radius: 0px 4px 4px 0px;
+            -moz-border-radius: 0px 4px 4px 0px;
+            border-radius: 0px 4px 4px 0px;
+        }
+        
+        #resume .button:hover {
+            background-color: rgba(5, 180, 249, .9);
+        }
+        /* Portfolio Section */
+        /*-------------------------------------------------------*/
+        
+        .row>.column {
+            padding: 0 8px;
+        }
+        
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            width: 572px;
+            max-width: 100%;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column {
+            float: left;
+            width: 25%;
+        }
+        
+        .close {
+            opacity: .7;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff!important;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Modal Content */
+        /* The Close Button */
+        
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        img {
+            margin-bottom: -4px;
+        }
+        
+        .caption-container {
+            text-align: center;
+            background-color: black;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+        
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #portfolio {
+            padding: 20px 20px 20px 20px;
+        }
+        /* Images list */
+        
+        #portfolio-list {
+            width: 820px;
+            overflow: hidden;
+        }
+        
+        #portfolio-list li {
+            float: left;
+            margin-right: 25px;
+            text-align: center;
+            background-color: #fbfbfb;
+            border-bottom: 1px solid #e5e5e5;
+            height: 185px;
+            margin-bottom: 30px;
+            width: 180px;
+        }
+        
+        #portfolio-list li:hover {
+            border-bottom: 1px solid rgba(5, 180, 249, .9);
+            height: 185px;
+        }
+        
+        #portfolio-list img {
+            background-color: #FFF;
+            height: 120px;
+            width: 180px;
+        }
+        
+        #portfolio-list li:hover .title {
+            color: rgba(5, 180, 249, .9);
+        }
+        
+        #portfolio-list li .title {
+            font-size: 14px;
+            margin-top: 15px;
+            font-weight: 400;
+            color: #3A3A3A;
+        }
+        
+        #portfolio-list li .categorie {
+            font-size: 11px;
+            line-height: 25px;
+            color: #999;
+        }
+        /* Filter menu */
+        
+        .cats-filter {
+            border-bottom: 1px solid #ededed;
+            overflow: hidden;
+            padding: 15px 0;
+        }
+        
+        .cats-filter li a {
+            float: left;
+            margin-right: 7px;
+            color: #fff;
+            background-color: #666;
+            padding: 10px 10px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: 'Roboto Condensed', sans-serif;
+            border-radius: 50px;
+        }
+        
+        .cats-filter li a:hover {
+            background-color: rgba(5, 180, 249, .9);
+            text-decoration: none;
+        }
+        
+        .cats-filter li a.current {
+            background-color: rgba(5, 180, 249, .9);
+        }
+        /*-------------------------------------------------------*/
+        /* Contact Section */
+        /*-------------------------------------------------------*/
+        
+        #contact {
+            overflow: hidden;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .contact-info,
+        .contact-form {
+            float: left;
+            padding: 0 20px;
+        }
+        
+        .contact-info {
+            width: 250px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .contact-form {
+            width: 530px;
+        }
+        /* Contact info */
+        
+        .contact-info ul {
+            float: left;
+            border-left: 1px solid rgba(5, 180, 249, .9);
+            padding-left: 18px;
+        }
+        
+        .contact-info ul li {
+            font-size: 13px;
+            line-height: 20px;
+            color: #666;
+            overflow: hidden;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        /* Google map */
+        
+        #map {
+            height: 300px;
+            margin-bottom: 25px;
+            width: 100%;
+            border-bottom: 1px solid #CCC;
+            border-top: 1px solid #CCC;
+            width: 100%;
+        }
+        
+        #map iframe {
+            width: 100%;
+        }
+        /*-------------------------------------------------------*/
+        /* Forms */
+        /*-------------------------------------------------------*/
+        
+        form .input,
+        form textarea {
+            -moz-box-shadow: inset 0 5px 16px -13px #333;
+            /* -webkit-box-shadow: inset 0 5px 16px -13px #333; */
+            /* box-shadow: inset 0 5px 16px -13px #333; */
+            background-color: #FDFDFD;
+            border: 1px solid #ced4da;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            color: #666;
+            font-size: 12px;
+            height: 30px;
+            outline: none;
+            padding: 6px 10px;
+            resize: none;
+            width: 96%;
+        }
+        
+        form textarea {
+            height: 112px;
+            line-height: 18px;
+            margin-bottom: 0;
+            padding-top: 8px;
+        }
+        
+        form p {
+            margin-bottom: 15px;
+        }
+        
+        form p label {
+            display: block;
+            color: #999;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+        
+        .button {
+            color: #fff;
+            background-color: rgba(5, 180, 249, .9);
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        
+        .button:hover {
+            background-color: rgba(5, 180, 249, .9);
+        }
+        /*-------------------------------------------------------*/
+        
+        footer {
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        /*-------------------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header class="header header--bg">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#">DART AGENCY</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">FEATURES</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="header__content text-center">
+                    <h1 class="header__content__title">CREATIVE AGENCY</h1>
+                    <p class="header__content__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <a class="button button--margin-right button--hover" href="#">LARN MORE</a>
+                    <a class="button button--hover" href="#">PURCHASE</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <section class="slider">
+            <div class="page-section text-center">
+                <h2 class="page-section__title">WHAT CLIENT SAY?</h2>
+                <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive slider__image" src="assets/images/slider-image.png" alt="">
+                            <p class="slider__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                            <h3 class="slider__name">Sheryl D</h3>
+                            <p class="slider__title">UI Design Agency</p>
+                        </div>
+
+                        <div class="item">
+                            <img class="img-responsive slider__image" src="assets/images/slider-image.png" alt="">
+                            <p class="slider__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                            <h3 class="slider__name">Sheryl D</h3>
+                            <p class="slider__title">UI Design Agency</p>
+                        </div>
+
+                        <div class="item">
+                            <img class="img-responsive slider__image" src="assets/images/slider-image.png" alt="">
+                            <p class="slider__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                            <h3 class="slider__name">Sheryl D</h3>
+                            <p class="slider__title">UI Design Agency</p>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <i class="material-icons">chevron_left</i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <i class="material-icons">chevron_right</i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact-two contact-two--bg">
+        <div class="container">
+            <div class="page-section text-center">
+                <h2 class="contact-two__title">Keep in touch with us! We are available for 24 hours</h2>
+                <a class="button contact-two__button button--hover" href="#">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="blog">
+            <div class="page-section">
+                <div class="text-center">
+                    <h2 class="page-section__title">OUR BLOG</h2>
+                    <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="row gutters-50">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="assets/images/blog-pic1.png" target="_blank">
+                                <img class="img-responsive" src="assets/images/blog-pic1.png" alt="">
+                                <div class="caption">
+                                    <h3 class="blog__title">Global Traffic Search</h3>
+                                    <p class="blog__paragraph">By Jhon Doe <span class="blog__paragraph--slash">&#47;</span> 12 July, 2017 <span class="blog__paragraph--slash">&#47;</span> 2 Comments</p>
+                                    <h4 class="blog__read-more">READ MORE</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="assets/images/blog-pic2.png" target="_blank">
+                                <img class="img-responsive" src="assets/images/blog-pic2.png" alt="">
+                                <div class="caption">
+                                    <h3 class="blog__title">Global Traffic Search</h3>
+                                    <p class="blog__paragraph">By Jhon Doe &#47; 12 July, 2017 &#47; 2 Comments</p>
+                                    <h4 class="blog__read-more">READ MORE</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="assets/images/blog-pic3.png" target="_blank">
+                                <img class="img-responsive" src="assets/images/blog-pic3.png" alt="">
+                                <div class="caption">
+                                    <h3 class="blog__title">Global Traffic Search</h3>
+                                    <p class="blog__paragraph">By Jhon Doe &#47; 12 July, 2017 &#47; 2 Comments</p>
+                                    <h4 class="blog__read-more">READ MORE</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="contact contact--bg ">
+        <div class="container ">
+            <div class="page-section text-center ">
+                <h2 class="page-section__title--white ">We Always Work To Make A Difference</h2>
+                <p class="page-section__paragraph--white ">If you like our works and have a project,contact us now</p>
+                <a class="button button--hover " href="# ">CONTACT US</a>
+            </div>
+        </div>
+    </section>
+    <!-- ------------ ------------ -->
+    <section id="container">
+
+        <header>
+            <div id="logo">
+                <h2>TIM WILSON</h2>
+                <h4>GRAPHIC & WEB DESIGNER</h4>
+
+            </div>
+            <div class="social-icons-container">
+                <span class="socials-text"><button class="pulse-button"><i class="fa fa-share" aria-hidden="true"></i></button></span>
+                <ul class="socialicons">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="content">
+            <div id="profile">
+                <div class="about">
+                    <div class="photo-inner">
+                        <ul>
+                            <li><img src="images/photo.jpg" height="186" width="153" /></li>
+                            <li><img src="images/photo1.png" height="186" width="153" /></li>
+                        </ul>
+                    </div>
+                    <h1>TIM </h1>
+                    <h3>GRAPHIC & WEB DESIGNER</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem itaque repudiandae cupiditate pariatur doloremque </p>
+                </div>
+                <ul class="personal-info">
+                    <li><label>Name</label><span>Tim Wilson</span></li>
+                    <li><label>Birthday</label><span>April 10, 1989</span></li>
+                    <li><label>Address</label><span>4630  Geneva Street NY USA</span></li>
+                    <li><label>Email</label><span class="word-wrap">tim.wilson@yahoo.com</span></li>
+                    <li><label>Phone</label><span>917-508-9924</span></li>
+                    <li><label>Website</label><span class="word-wrap"><a href="#">www.timwilson.io</a></span></li>
+                </ul>
+            </div>
+            <!-- /Profile -->
+            <nav class="menu">
+                <ul class="tabs">
+                    <li class="tmenu"><a href="#profile" class="tab-profile"><i><i class="fa fa-user" aria-hidden="true"></i></i>Profile</a></li>
+                    <li class="tmenu"><a href="#resume"><i><i class="fa fa-wpexplorer" aria-hidden="true"></i></i>Resume</a></li>
+                    <li class="tmenu"><a href="#portfolio"><i><i class="fa fa-eercast" aria-hidden="true"></i></i>Portfolio</a></li>
+                    <li class="tmenu"><a href="#contact"><i><i class="fa fa-telegram" aria-hidden="true"></i></i>Contact</a></li>
+                </ul>
+            </nav>
+            <section id="resume">
+                <div class="container">
+                    <h1>Resume comes here</h1>
+                    L.
+                    <br> Lis.
+                    <br><br>
+                </div>
+            </section>
+            <!-- /Resume -->
+            <section id="portfolio">
+                <div class="container">
+                    <h1>Portfolio comes here</h1>
+                    L.
+                    <br> L!
+                </div>
+            </section>
+            <!-- /Portfolio -->
+            <section id="contact">
+                <div class="container">
+                    <h1>Contact comes here</h1>
+                    L.
+                    <br> ?
+                </div>
+                <br>
+            </section>
+            <!-- /contact -->
+        </section>
+        <!-- /Content -->
+        <footer>
+            <div class="copyright">Copyright &copy; 2019 Tim Wilson</div>
+        </footer>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easytabs/3.2.0/jquery.easytabs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.1.0/jquery.carouFredSel.packed.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#portfolio").magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+    </script>
+    <section class="about ">
+        <div class="container ">
+            <div class="page-section ">
+                <div class="text-center ">
+                    <h2 class="page-section__title ">ABOUT DART AGENCY</h2>
+                    <p class="page-section__paragraph ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="row gutters-50 ">
+                    <div class="about--narrow ">
+                        <div class="col-md-6 ">
+                            <img class="img-responsive " src="assets/images/about-pic.png " alt=" ">
+                        </div>
+                        <div class="col-md-6 about__extra-padding ">
+                            <h3 class="about__content-title ">We Believe <br>The Simple Design</h3>
+                            <p class="about__content-subTitle ">Trusted comes with tons of custom widgets, color options, font control and much more.</p>
+                            <p class="about__content-paragraph " ">We aim to eliminate the task of dividing your project between different agency, corporate and business template. We are a company that offers services for our clients to solve problems and planing strategies for humanity
+                                      all over the world.</p>
+                                      <a class="button--light " href="# ">READ MORE</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+          </section>
+  
+          <section class="letsGo letsGo--bg ">
+              <div class="container ">
+                  <div class="page-section page-section--small text-center ">
+                      <h2 class="page-section__title--white page-section__title--white--less-margin ">LET’S MAKE SOMETHING GREAT TOGETHER</h2>
+                      <p class="page-section__paragraph page-section__paragraph--less-padding ">We aim to eliminate the task of dividing your project between different agency between different agency, corporate</p>
+                      <a class="button button--hover " href="# ">LETS GO</a>
+                  </div>
+              </div>
+          </section>
+  
+          <div class="container ">
+              <section class="project ">
+                  <div class="page-section ">
+                      <div class="text-center ">
+                          <h2 class="page-section__title ">FEATURED PROJECT</h2>
+                          <p class="page-section__paragraph ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      </div>
+                      <div class="row gutters-50 ">
+                          <div class="col-md-4 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/featured-project-pic1.png " target="_blank ">
+                                      <img class="img-responsive " src="assets/images/featured-project-pic1.png " alt=" ">
+                                      <div class="caption ">
+                                          <h4 class="project__title ">DESIGN</h4>
+                                          <p class="project__paragraph ">Lorem ipsum dolor sit amet </p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-4 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/featured-project-pic2.png " target="_blank ">
+                                      <img class="img-responsive " src="assets/images/featured-project-pic2.png " alt=" ">
+                                      <div class="caption ">
+                                          <h4 class="project__title ">DESIGN</h4>
+                                          <p class="project__paragraph ">Lorem ipsum dolor sit amet </p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-4 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/featured-project-pic3.png " target="_blank ">
+                                      <img class="img-responsive " src="assets/images/featured-project-pic3.png " alt=" ">
+                                      <div class="caption ">
+                                          <h4 class="project__title ">DESIGN</h4>
+                                          <p class="project__paragraph ">Lorem ipsum dolor sit amet </p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row gutters-50 ">
+                          <div class="col-md-4 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/featured-project-pic4.png " target="_blank ">
+                                      <img class="img-responsive " src="assets/images/featured-project-pic4.png " alt=" ">
+                                      <div class="caption ">
+                                          <h4 class="project__title ">DESIGN</h4>
+                                          <p class="project__paragraph ">Lorem ipsum dolor sit amet </p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-4 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/featured-project-pic5.png " target="_blank ">
+                                      <img class="img-responsive " src="assets/images/featured-project-pic5.png " alt=" ">
+                                      <div class="caption ">
+                                          <h4 class="project__title ">DESIGN</h4>
+                                          <p class="project__paragraph ">Lorem ipsum dolor sit amet </p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-4 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/featured-project-pic6.png " target="_blank ">
+                                      <img class="img-responsive " src="assets/images/featured-project-pic6.png " alt=" ">
+                                      <div class="caption ">
+                                          <h4 class="project__title ">DESIGN</h4>
+                                          <p class="project__paragraph ">Lorem ipsum dolor sit amet </p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+  
+          <div class="container ">
+              <div class="modal fade " id="myModal " tabindex="-1 " role="dialog " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+                  <div class="modal-dialog " role="document ">
+                      <div class="modal-content ">
+                          <div class="modal-body ">
+                              <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                  </button>
+  
+                              <div class="embed-responsive embed-responsive-16by9 ">
+                                  <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/WP_vM301VZA?autoplay=0 " frameborder="0 " allowfullscreen=" " id="video " allowscriptaccess="always "></iframe>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <section class="video-section video-section--bg ">
+              <div class="container ">
+                  <div class="page-section page-section--large text-center ">
+                      <button class="video-section__icon " data-toggle="modal " data-target="#myModal "><img src="assets/images/video-icon.png " alt=" "></button>
+                  </div>
+              </div>
+          </section>
+  
+          <div class="container ">
+              <section class="team ">
+                  <div class="page-section text-center ">
+                      <h2 class="page-section__title ">CREATIVE TEAM</h2>
+                      <p class="page-section__paragraph ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <div class="row gutters-50 ">
+                          <div class="col-md-6 col-lg-3 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/team-pic1.png " target="_blank ">
+                                      <img src="assets/images/team-pic1.png " alt=" ">
+                                      <div class="caption team__caption ">
+                                          <h4 class="team__name ">Elodia S. Keefe</h4>
+                                          <p class="team__title ">Founder</p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/team-pic2.png " target="_blank ">
+                                      <img src="assets/images/team-pic2.png " alt=" ">
+                                      <div class="caption team__caption ">
+                                          <h4 class="team__name ">Sheryl D. Trent</h4>
+                                          <p class="team__title ">Co-Founder</p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/team-pic3.png " target="_blank ">
+                                      <img src="assets/images/team-pic3.png " alt=" ">
+                                      <div class="caption team__caption ">
+                                          <h4 class="team__name ">Dorothy J. Cook</h4>
+                                          <p class="team__title ">UI Specialist</p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-md-6 col-lg-3 ">
+                              <div class="thumbnail ">
+                                  <a href="assets/images/team-pic4.png " target="_blank ">
+                                      <img src="assets/images/team-pic4.png " alt=" ">
+                                      <div class="caption team__caption ">
+                                          <h4 class="team__name ">Stuart D. Mahaffey</h4>
+                                          <p class="team__title ">Admin</p>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+  
+          <div class="container ">
+              <section class="price ">
+                  <div class="page-section page-section--small text-center ">
+                      <h2 class="page-section__title ">OUR PRICING</h2>
+                      <p class="page-section__paragraph ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                      <div class="price__panel-wrapper ">
+                          <div class="row gutters-50 ">
+                              <div class="col-md-4 ">
+                                  <div class="panel text-center ">
+                                      <div class="panel-heading ">
+                                          <h4 class="price__title ">SILVER</h4>
+                                          <h1 class="price__ammount ">&#36;<span class="price__ammount--number ">159</span> &#47;Year</h1>
+                                      </div>
+                                      <div class="panel-body ">
+                                          <p>Up To 5 user</p>
+                                          <p>Max. 100 iteam/month</p>
+                                          <p>Unlimited queries</p>
+                                          <p>Full statistics</p>
+                                      </div>
+                                      <div>
+                                          <a class="panel__button " href="# ">GET THIS PLAN</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 ">
+                                  <div class="panel text-center ">
+                                      <div class="panel-heading ">
+                                          <h4 class="price__title ">GOLD</h4>
+                                          <h1 class="price__ammount ">&#36; <span class="price__ammount--number ">249</span> &#47;Year</h1>
+                                      </div>
+                                      <div class="panel-body ">
+                                          <p>Up To 10 user</p>
+                                          <p>Max. 200 iteam/month</p>
+                                          <p>Unlimited queries</p>
+                                          <p>Full statistics</p>
+                                      </div>
+                                      <div>
+                                          <a class="panel__button " href="# ">GET THIS PLAN</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-4 ">
+                                  <div class="panel text-center ">
+                                      <div class="panel-heading ">
+                                          <h4 class="price__title ">PLATINUM</h4>
+                                          <h1 class="price__ammount ">&#36; <span class="price__ammount--number ">459</span> &#47;Year</h1>
+                                      </div>
+                                      <div class="panel-body ">
+                                          <p>Up To 5 user</p>
+                                          <p>Unlimited iteam</p>
+                                          <p>Unlimited queries</p>
+                                          <p>Full statistics</p>
+                                      </div>
+                                      <div>
+                                          <a class="panel__button " href="# ">GET THIS PLAN</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+    <footer class="footer footer--bg ">
+        <div class="container ">
+            <div class="page-section ">
+                <div class="row gutters-100 ">
+                    <div class="col-md-4 col-lg-3 ">
+                        <div class="footer__first ">
+                            <h2 class="footer__title ">DART AGENCY</h2>
+                            <p class="footer-first__paragraph ">Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore </p>
+                            <ul class="footer-first__social-icons ">
+                                <li><a href="# "><i class="flaticon-facebook-letter-logo "></i></a></li>
+                                <li><a href="# "><i class="flaticon-twitter-logo "></i></a></li>
+                                <li><a href="# "><i class="flaticon-dribbble-logo "></i></a></li>
+                                <li><a href="# "><i class="flaticon-behance-logo "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2 ">
+                        <div class="footer__second ">
+                            <h2 class="footer__title ">QUICK LINK</h2>
+                            <ul>
+                                <li><a href="# ">Home</a></li>
+                                <li><a href="# ">About Us</a></li>
+                                <li><a href="# ">Service</a></li>
+                                <li><a href="# ">Blog</a></li>
+                                <li><a href="# ">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="footer__third ">
+                            <h2 class="footer__title ">CONTACT US</h2>
+                            <ul>
+                                <li><span class="glyphicon glyphicon-envelope "></span> <a href="# ">dartagency@gmail.com</a></li>
+                                <li><span class="glyphicon glyphicon-earphone "></span> <a href="# ">+0123-345-6789</a></li>
+                            </ul>
+                            <h4 class="footer__subscribe__title ">Subscribe</h4>
+                            <div class="subscribe-section ">
+                                <input type="email " class="form-control " size="50 " placeholder="Enter Your Email " required>
+                                <button class="subscribe-section__button " type="button "><img src="assets/images/send-icon.png " alt=" "></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 ">
+                        <div class="footer__fourth ">
+                            <h4 class="footer__title ">INSTAGRAM</h4>
+                            <div class="row ">
+                                <ul>
+                                    <li>
+                                        <a href="# "><img src="assets/images/instagram-pic1.png " alt=" "></a>
+                                    </li>
+                                    <li>
+                                        <a href="# "><img src="assets/images/instagram-pic2.png " alt=" "></a>
+                                    </li>
+                                    <li>
+                                        <a href="# "><img src="assets/images/instagram-pic3.png " alt=" "></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row ">
+                                <ul>
+                                    <li>
+                                        <a href="# "><img src="assets/images/instagram-pic4.png " alt=" "></a>
+                                    </li>
+                                    <li>
+                                        <a href="# "><img src="assets/images/instagram-pic5.png " alt=" "></a>
+                                    </li>
+                                    <li>
+                                        <a href="# "><img src="assets/images/instagram-pic6.png " alt=" "></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="footer__horizontal-bar ">
+                <p class="footer__bottom-paragraph ">&copy; Copyright 2017 <a href="# " style="color: #00aafe;font-weight:bold; ">DartThemes</a>. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/jquery/jquery-3.2.1.min.js "></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js "></script>
+
+    <script>
+        $(document).ready(function() {
+
+            var $videoSrc = $("#video ").attr("src ");
+
+            $('#myModal').on('hide.bs.modal', function(e) {
+                $("#video ").attr('src', $videoSrc);
+            });
+
+
+
+        });
+    </script>
+</body>
+
+</html>

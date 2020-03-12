@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dart - page</title>
+    <meta name="keywords" content="2.">
+    <meta name="description" content="3.">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <link rel="stylesheet" href="temp/styles/style.css">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="csss/style.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <section class="service">
+            <div class="container">
+                <div class="page-section text-center">
+                    <h2 class="page-section__title">SERVICES OFFERTS</h2>
+                    <div class="row gutters-40">
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="#credit_bloc" class="a_link">
+                                    <i class="material-icons">trending_up</i>
+                                    <h4 class="service__title">Credit Foncier</h4>
+                                </a>
+                                <p class="service__paragraph">I</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <i class="material-icons">access_time</i>
+                                <h4 class="service__title">Achat de Terrains</h4>
+                                <p class="service__paragraph">U</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <i class="material-icons">group</i>
+                                <h4 class="service__title">Pret Association</h4>
+                                <p class="service__paragraph">I</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center ">
+            <h2 class="page-section__title">RENSEIGNEZ VOS DONNEES</h2>
+        </div>
+        <header class="header header--bg ">
+            <div class="container " id="credit_bloc" style="transition-property: all;transition-duration: 900ms;">
+                <div class="page-section ">
+                    <div class="row gutters-50 bloc-calcul ">
+                        <br>
+                        <h3 class="service__title text-center">Credit Foncier</h3>
+                        <!-- Sign up form -->
+                        <div class="signup-content">
+                            <div class="signup-form">
+                                <form method="POST" class="register-form" id="register-form" onsubmit="calcul_credit();return false">
+                                    <div class="form-group">
+                                        <label class="label-color" for="name"><i class="zmdi zmdi-money-box material-icons-name"></i></label>
+                                        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="somme" id="somme_credit" placeholder="La somme que vous voulez emprunter" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-color" for="email"><i class="zmdi zmdi-timer"></i></label>
+                                        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="time" id="time" placeholder="La duree pendant laquelle vous allez rembourser" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-color" for="pass"><i class="zmdi zmdi-close-circle"></i></label>
+                                        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="taux" id="taux" placeholder="Taux Maximum d'interet que vous souhaitez" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-color" for="re-pass"><i class="zmdi zmdi-check-circle"></i></label>
+                                        <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" name="re_pass" id="re_pass" placeholder="Taux Minimun d'interet que vous souhaitez" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                        <label for="agree-term" class="label-agree-term"><span><span></span></span>Vous n'avez fait aucun autre pret </label>
+                                    </div>
+                                    <div class="form-group form-button">
+                                        <input type="submit" name="signup" onclick="calcul_credit()" id="loginSubmit" class="form-submit" value="Calculez" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="signup-image">
+                                <div class="result" id="div_result">
+                                    <div class="form-group">
+                                        <span class="color-blue">
+                                        Vous Pouvez Rembourser:
+                                        </span>
+                                        <br>
+                                        <strong class="text-result">
+                                          <span class="text-center" id="result_credit"></span>
+                                        </strong>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="color_blue">
+                                        Pendant
+                                      </span>
+                                        <span class="text-center" id="time_credit">
+                                        
+                                      </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="overview overview--bg ">
+        <div class="container ">
+            <div class="page-section ">
+                <div class="overview__wrapper text-center ">
+                    <ul>
+                        <li>
+                            <h1 class="overview__number ">550</h1>
+                            <p class="overview__title ">CUP OF COFFEE</p>
+                        </li>
+                        <li>
+                            <h1 class="overview__number ">800</h1>
+                            <p class="overview__title ">PROJECT DONE</p>
+                        </li>
+                        <li>
+                            <h1 class="overview__number ">400</h1>
+                            <p class="overview__title ">HAPPY CLIENT</p>
+                        </li>
+                        <li>
+                            <h1 class="overview__number ">3550</h1>
+                            <p class="overview__title ">AWARDS WIN</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+
+
+
+
+    <script src="assets/jquery/jquery-3.2.1.min.js "></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js "></script>
+
+    <script>
+        function calcul_credit() {
+
+            document.getElementById('result_credit').innerHTML = document.getElementById('somme_credit').value + ' /  mois';
+
+            document.getElementById('time_credit').innerHTML = document.getElementById('time').value + ' ans';
+
+            var result = document.getElementById('div_result');
+
+            result.classList.add("visible");
+        }
+    </script>
+</body>
+
+</html>

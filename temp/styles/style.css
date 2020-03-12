@@ -1,0 +1,51 @@
+.bloc-calcul {
+    background-color: white !important;
+    min-height: 37em;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.a_link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.label-color {
+    background-color: rgba(5, 180, 249, .9);
+    padding: 6px 7px;
+    color: white;
+    font-size: 15px;
+    width: 10% !important;
+    text-align: center;
+    font-weight: 900;
+}
+
+.color-blue {
+    color: rgba(5, 180, 249, .9);
+    font-size: 18px;
+}
+
+.text-result {
+    color: dimgray;
+    text-align: center;
+    text-emphasis: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+
+.result {
+    display: none;
+    width: auto;
+}
+
+.visible {
+    display: grid;
+}
+
+h5 {
+    font-family: Arial, serif !important;
+    font-weight: 100 !important;
+    font-size: 16px !important;
+}
